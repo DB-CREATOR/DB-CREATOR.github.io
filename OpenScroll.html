@@ -12,14 +12,26 @@
             }
             #scrollopened{
                 position: absolute;
-                z-index: 0;
-                height: 1px;
-                width: 1px;
+                 z-index: 4;
+                    top: 0%;
+                    left: 0%;
+                    height: 110%;
+                    width: 40%;
+                    padding:0 30% 0 30%;
+                    background:radial-gradient(1000px, transparent, black);
             }
                 #poem{
-                        width: 1px;
-                        height: 1px;
-                        font-size: 1px;
+                        text-align: center;
+                        font-family: "Dancing Script", cursive;
+                        position:absolute;
+                        z-index: 5;
+                        top: 9%;
+                        left:30%;
+                        font-size: 20px;
+                        width: 40%;
+                        height: 60;
+                        animation: apparition 1s;
+
                 }
             #bgimg{
                 width: 100%;
@@ -48,27 +60,6 @@
                 border: solid 5px white;
                 border-radius: 10px;
             }
-            .scrollclosed:active ~ #scrollopened{
-                    z-index: 4;
-                    top: 0%;
-                    left: 0%;
-                    height: 110%;
-                    width: 40%;
-                    padding:0 30% 0 30%;
-                    background:radial-gradient(1000px, transparent, black);
-            }
-            .scrollclosed:active ~ #poem{
-                text-align: center;
-                font-family: "Dancing Script", cursive;
-                position:absolute;
-                z-index: 5;
-                top: 9%;
-                left:30%;
-                font-size: 20px;
-                width: 40%;
-                height: 60;
-                animation: apparition 1s;
-                }
             @keyframes apparition{
                     0%{
                             filter: opacity(0%);
@@ -128,5 +119,4 @@ Et le regret non-temporaire.<br>
 Se termine donc ma lettre sincère,<br>
 Exprimant l’amour hors-pair.<br>
 </p>
-            <a href="https://db-creator.github.io/openedscroll.html" id="lienlien"><h1>clique ou je te bute</h1></a>
 </body></html>
